@@ -9,7 +9,7 @@ class App(tk.Tk):
         self.title("LogicLab")
         self.geometry("1280x720")
         self.resizable(False, False)
-        self.iconbitmap("./assets/logo2.ico")
+        self.iconbitmap("./assets/logo.ico")
         
         self.helloFrame = HelloFrame(self)
 
