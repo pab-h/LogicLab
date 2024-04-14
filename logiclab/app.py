@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from logiclab.frames.helloFrame import HelloFrame
+from logiclab.frames.example import Example
 
 class App(tk.Tk):
     def __init__(self) -> None:
@@ -9,9 +9,13 @@ class App(tk.Tk):
         self.title("LogicLab")
         self.geometry("1280x720")
         self.resizable(False, False)
-        self.iconbitmap("./assets/logo.ico")
+        self.iconphoto(
+            True,
+            tk.PhotoImage(file = "assets/logo.png")
+        )
         
-        self.helloFrame = HelloFrame(self)
+        self.example = Example(self)
+        self.example.pack()
 
     def __enter__(self):
         print("Carregando todos os recursos....")
