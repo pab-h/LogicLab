@@ -20,5 +20,5 @@ Após instalado as dependências,  utilize o seguinte comando para iniciar o apl
 # Scripts
 
 ``poetry run start`` -> Inicializa o aplicativo apropriadamente
-
+``poetry run dev`` -> Inicializa o aplicativo em modo de desenvolvimento
 ``poetry run test`` -> Executa os testes unitários

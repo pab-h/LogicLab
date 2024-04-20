@@ -1,6 +1,6 @@
 import subprocess
 
-from main import main
+from logiclab.app import app
 
 def test() -> None:
     subprocess.run(
@@ -8,4 +8,7 @@ def test() -> None:
     )
 
 def start() -> None:
-    main()
+    app.run()
+
+def dev() -> None:
+    app.run(debug=True)
