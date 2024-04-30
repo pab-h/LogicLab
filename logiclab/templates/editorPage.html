@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../static/editor.css">
-        <link rel="stylesheet" href="../static/toolbar.css">
-        
-        <title> Página do Editor </title>
-    </head>
-    <body>
 
-        <nav class = "toolbar">
-            <div class="logo">
-                <a href="#"><img src="../static/assets/Logo_toolbar.png" width="100" height="80" ></a>
-            </div>
-           
-            <div class= "navegation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página do Editor </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="static/toolbar.css">
+    <link rel="stylesheet" href="static/editor.css">
+    <script defer src="static/toolbar.js"></script>
+
+</head>
+
+<body>
+    <nav class="toolbar">
+        <div class="logo">
+            <a href="#"><img src="static/assets/Logo_toolbar.png" width="100" height="80" ></a>
+        </div>
+       
+        <div class="navegation">
+            
+                <div class="dropDown">
+                        <a> <img src="static/assets/botao.png"> </a>
+                        <ul class = "nav-list">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Projetos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                </div>
                 
-                    <div class = "dropDown">
-                            <a> <img src="../static/assets/botao.png"> </a>
-                            <ul class = "nav-list">
-                                <li><a href="#">Início</a></li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Projetos</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                    </div>
+                <div class = "dropDown">
+                    <div> <a> <img src="static/assets/botao.png"> </a> </div>
+                    <ul class = "nav-list">
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Project</a></li>
+                        
+                    </ul>
+                 </div>
+
+                <div class = "dropDown">
+                <div> <a> <img src="static/assets/botao.png"> </a> </div>
+                <ul class = "nav-list">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
                     
-                    <div class = "dropDown">
-                        <div> <a> <img src="../static/assets/botao.png"> </a> </div>
+                </ul>
+                </div>
+
+                <div class = "dropDown">
+                    <div> <a> <img src="static/assets/botao.png"> </a> </div>
                         <ul class = "nav-list">
                             <li><a href="#">Start</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Project</a></li>
                             
                         </ul>
-                     </div>
-
-                    <div class = "dropDown">
-                    <div> <a> <img src="../static/assets/botao.png"> </a> </div>
-                    <ul class = "nav-list">
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Project</a></li>
-                        
-                    </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div> <a> <img src="../static/assets/botao.png"> </a> </div>
-                            <ul class = "nav-list">
-                                <li><a href="#">Start</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Project</a></li>
-                                
-                            </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                    <div> <a> <img src="../static/assets/botao.png"> </a> </div>
-                    <ul class = "nav-list">
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Project</a></li>
-                        
-                    </ul>
-                    </div>
-
-
-
-                        
-                    
                 </div>
-        </nav>  
-        
-        
 
-        <main>
-            <!-- <input type="text"> -->
-            <script src="../static/toolbar.js"></script>
-            <div>
-                <canvas></canvas>
-                <div>
-                    <ul>
-                        <!-- <li> Lista dos componentes </li> -->
-                    </ul>
+                <div class = "dropDown">
+                <div> <a> <img src="static/assets/botao.png"> </a> </div>
+                <ul class = "nav-list">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    
+                </ul>
                 </div>
             </div>
-        </main>
-    </body>
+    </nav>  
+
+    <div class="expression-circuit-container">
+        <div class="expression-container">
+            <div class="expression-label">Expressão algébrica</div>
+            <input class="expression" type="text">
+        </div>
+
+        <div class="circuit-container">
+            <div class="circuit-label">Circuito</div>
+            <div class="circuit-canvas"></div>
+        </div>
+    </div>
+</body>
+
 </html>
