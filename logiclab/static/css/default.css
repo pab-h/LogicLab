@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 html {
@@ -8,4 +9,5 @@ html {
     color: white;
     margin: 1vw;
     height: 1vh;
+    font-size: 14pt;
 }
