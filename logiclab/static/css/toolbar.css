@@ -1,27 +1,35 @@
-@import url("static/default.css");
+.toolbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                'Segoe UI',
+                Roboto, 
+                Oxygen, 
+                Ubuntu, 
+                Cantarell, 
+                'Open Sans', 
+                'Helvetica Neue', 
+                sans-serif;
+     background: #1e1e1e;
+     height: 15vh;
+     margin-bottom: 1rem;
+}
 
-a{
+.toolbar a {
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover{
+.toolbar a:hover{
    opacity: 0.7;
 }
 
-.toolbar{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',
-                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     background: #1e1e1e;
-     height: 15vh;
-}
-
-.navegation {
+.toolbar .navegation {
     user-select: none ;
     cursor: pointer;
     display: flex;
@@ -32,20 +40,20 @@ a:hover{
     margin-top: 10px;
 }
 
-.navegation img{
+.toolbar .navegation img {
     width: 9vh; 
     height: 9vh; 
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.nav-list{
+.toolbar .nav-list{
     position: absolute;
     color: #163d99;
     
 }
 
-.toolbar .body{
+.toolbar .body {
     font-family: Arial, Helvetica, sans-serif;
     background: #163d99;
     min-height: 100vh;
@@ -56,12 +64,12 @@ a:hover{
 }
 
 
-.dropDown {
+.toolbar .dropDown {
     position: relative;
 }
 
     
-.dropDown .nav-list {
+.toolbar .dropDown .nav-list {
     display: none;
     position: absolute;
     top: 70%;
@@ -73,12 +81,12 @@ a:hover{
     z-index: 1;
 }
 
-.dropDown .nav-list li {
+.toolbar .dropDown .nav-list li {
     display: none;
-    line-height: 30px; /* Ajuste conforme necessário para centralizar o texto verticalmente */
+    line-height: 30px;
 }
 
-.dropDown .nav-list li a{
+.toolbar .dropDown .nav-list li a{
     display: block;
     padding: 5px 10px;
     line-height: inherit;
@@ -87,27 +95,27 @@ a:hover{
     font-size: 20px;
 }
 
-.dropDown:hover .nav-list {
+.toolbar .dropDown:hover .nav-list {
     display: block;
 }
 
-.dropDown:hover .nav-list li {
+.toolbar .dropDown:hover .nav-list li {
     display: block;
 }
 
-.dropDown .nav-list li {
+.toolbar .dropDown .nav-list li {
    
     display: none;
 }
 
-.dropDown .nav-list li a {
+.toolbar .dropDown .nav-list li a {
     display: block;
     padding: 5px 10px;
     color: #333;
     text-decoration: none;
 }
 
-.dropDown .nav-list li a:hover {
+.toolbar .dropDown .nav-list li a:hover {
     background-color: #f0f0f0;
 }
 

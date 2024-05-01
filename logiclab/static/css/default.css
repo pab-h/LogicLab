@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 html {
     background: #1e1e1e;
     color: white;
-    ma: 1vw;
+    margin: 1vw;
     height: 1vh;
+    font-size: 14pt;
 }
