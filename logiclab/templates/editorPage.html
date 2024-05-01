@@ -7,15 +7,13 @@
     <title> Página do Editor </title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="static/toolbar.css">
-    <link rel="stylesheet" href="static/editor.css">
-    <script defer src="static/toolbar.js"></script>
+    <link rel="stylesheet" href="static/css/editor.css">
 
 </head>
 
@@ -79,17 +77,64 @@
             </div>
     </nav>  
 
-    <div class="expression-circuit-container">
-        <div class="expression-container">
-            <div class="expression-label">Expressão algébrica</div>
-            <input class="expression" type="text">
+    <div class="editor-container">
+        <div class="expression-circuit-container">
+            <div class="expression-container">
+                <div class="expression-label">Expressão algébrica</div>
+                <input class="expression" type="text">
+            </div>
+    
+            <div class="circuit-container">
+                <div class="circuit-label">Circuito</div>
+                <div class="circuit-canvas"></div>
+            </div>
         </div>
 
-        <div class="circuit-container">
-            <div class="circuit-label">Circuito</div>
-            <div class="circuit-canvas"></div>
+        <div class="components-container">
+            <div class="switch">
+                <button> switch </button>
+            </div>
+            <div class="components">
+
+                <div class="component">
+                    <label> and </label>
+                    <img src="static/assets/gates/and.png" alt="and Gate">
+                </div>
+
+                <div class="component">
+                    <label> or </label>
+                    <img src="static/assets/gates/or.png" alt="or Gate">
+                </div>
+
+                <div class="component">
+                    <label> not </label>
+                    <img src="static/assets/gates/not.png" alt="not Gate">
+                </div>
+
+                <div class="component">
+                    <label> nand </label>
+                    <img src="static/assets/gates/nand.png" alt="nand Gate">
+                </div>
+
+                <div class="component">
+                    <label> nor </label>
+                    <img src="static/assets/gates/nor.png" alt="nor Gate">
+                </div>
+
+                <div class="component">
+                    <label> nxor </label>
+                    <img src="static/assets/gates/nxor.png" alt="nxor Gate">
+                </div>
+
+                <div class="component">
+                    <label> xor </label>
+                    <img src="static/assets/gates/xor.png" alt="xor Gate">
+                </div>
+
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
