@@ -1,23 +1,24 @@
 # LogicLab
-
 Editor de circuitos digitais
 
-# Build from source
+# Install from source
 
-1. Clone o repositório: 
+Nesse processo, é necessário utilizar a ferramenta [poetry](https://python-poetry.org/). 
 
-```bash
-git clone https://github.com/pab-h/LogicLab
-```
+Clone o repositório:
 
-2. Na pasta do projeto, instale as dependências:
+``` git clone `https://github.com/pab-h/LogicLab```
 
-```bash
-npm install
-```
+Instale corretamente as dependência do projeto usando o **poetry**:
 
-3. Inicialize a aplicação:
+``` poetry install``` 
 
-```bash
-npm run start
-```
+Após instalado as dependências,  utilize o seguinte comando para iniciar o aplicativo:
+
+``` poetry run start``` 
+
+# Scripts
+
+``poetry run start`` -> Inicializa o aplicativo apropriadamente
+
+``poetry run test`` -> Executa os testes unitários
